@@ -1,0 +1,25 @@
+*{
+	font-family: 'Microsoft YaHei';
+}
+.clear::after{
+	content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	list-style: none;
+	
+}
+
+a{
+	text-decoration: none;
+}

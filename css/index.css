@@ -1,0 +1,622 @@
+body{
+	background-color: #c6c6c6;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.top{
+	position: relative;/*这个是为了给下面导航栏定位使用*/
+	background: url(../img/bj.jpg) no-repeat;
+	background-color: sandybrown;
+	width: 1350px;
+	margin: 0 auto;
+	background-color: red;
+	height: 136px;
+	/*overflow: hidden;/*这个属性是为了防止出现margin上下合并*/
+}
+.top .logo{
+	height: 81px;
+	width: 420px;
+	display: inline-block;
+	margin: 1px 0 0 100px;
+	background: url(../img/logo3A.png) no-repeat;
+	background-size:300px 100px ;
+	/*background-color: darkgrey;*/
+}
+
+.top .right{
+	float: right;
+	height: 81px;
+	width: 350px;
+	min-width: 350px;
+	/*background-color: darksalmon;*/
+	margin: 20px 100px 0 0;
+}
+.top .right>div{
+	float: left;
+}
+.top .right .guanwei{
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	background: url(../img/nav_code.png) no-repeat;
+	background-size: 60px 60px;
+}
+.top .right .guanxuanke{
+	height: 60px;
+	width: 60px;
+	cursor: pointer;
+	margin-left: 10px;
+	background: url(../img/khzc.jpg) no-repeat;
+	background-size: 60px 60px;
+}
+
+.top .right .link_search{	
+	margin-left: 10px;
+	height: 100%;
+	width: 60%;
+}
+.top .right .link_search .language{
+	width: 100%;
+	overflow: hidden;
+	height: 40%;
+}
+.top .right .link_search span{
+	color: white;
+	margin-right: 5px;
+	font-size: 12px;
+}
+.top .right .link_search span a{
+	color: white;	
+}
+.top .right .link_search .search{
+	margin-top: 3px;
+}
+.top .right .link_search .search input[type='search']{
+	width: 152px;
+	height: 27px;
+}
+.top .right .link_search .search input[type='button']{
+	height: 27px;
+	width: 50px;
+}
+
+.top .nav{
+	height: 36px;
+	background-color: grey;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.top .nav a{
+	color: #414edc;
+}
+
+.top .nav ul li{
+	float: left;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+	height: 36px;
+	width: 161px;
+	background: url(../img/menu-a.png) no-repeat;
+	margin-left: -13px;
+	background-position: left center;
+}
+.top .nav ul li:nth-child(1){
+	background: url(../img/menu-b.png) no-repeat;
+}
+.top .nav ul li:nth-last-child(1){
+	background: url(../img/menu-c.png) no-repeat;
+}
+
+.top .nav ul li:nth-child(1){	
+	margin-left: 0px;
+}
+
+.top .nav ul li:nth-last-child(1){
+	margin-left: -9px;
+}
+
+
+.top .nav ul li:hover{
+	background: url(../img/menu-a1.png) no-repeat;
+}
+.top .nav ul li:nth-child(1):hover{
+	background: url(../img/menu-b1.png) no-repeat;
+}
+.top .nav ul li:nth-last-child(1):hover{
+	background: url(../img/menu-c1.png) no-repeat;
+}
+.top .nav ul li:hover a{
+	color: white;
+}
+
+
+.top .nav ul li a{
+	display: block;
+	height: 36px;
+	width: 161px;
+	text-align: center;
+}
+.top .nav ul li .nav_child{
+	height: 27px;
+	width: 150px;
+	font-size: 13px;
+	text-align: center;
+	line-height: 27px;
+	background: url(../img/menu-child-a.png) no-repeat;
+	background-position: left center;
+	margin-left: 13px;
+	color: white;
+	display: none;	
+}
+
+
+.top .nav ul li .nav_child:nth-child(2){  	
+	background: url(../img/menu-child-b.png) no-repeat;
+}
+.top .nav ul li .nav_child:nth-last-child(1){  	
+	background: url(../img/menu-child-c.png) no-repeat;
+}
+
+
+.top .nav ul li a.nav_child:hover{
+	color: red;
+	background: url(../img/menu-child-a1.png);
+}
+
+.top .nav ul li a.nav_child:nth-of-type(2):hover{
+	background: url(../img/menu-child-b1.png);	
+}
+.top .nav ul li a.nav_child:nth-last-child(1):hover{
+	background: url(../img/menu-child-c1.png);	
+}
+
+
+.top .nav ul li:hover a{
+	display: block;
+	z-index: 2;
+	
+}
+
+/*轮播图*/
+.carousel{
+	width: 1350px;
+	height: 230px;
+	background-color: sienna;
+	margin: 0px auto;
+	position: relative;
+	z-index: -1;
+	
+}
+
+.carousel .swiper-container{
+	width: 1350px;
+	height: 230px;
+}
+.carousel .swiper-container a{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+/*kjjy*/
+.kjjy{
+	width: 1350px;
+	height: 220px;
+	background-color: salmon;
+	margin: 0 auto;
+	background: url(../img/jbbj.jpg);
+	position: relative;
+}
+
+.kjjy .wrap{
+	width: 1350px;
+	height: 200px;
+	background-color: white;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	
+}
+
+.kjjy .wrap .main{
+	position: absolute;
+	width: 1200px;
+	height: 200px;
+	/*background-color: darkcyan;*/
+	left: 75px;
+	top: 5px;
+}
+.kjjy .wrap .main .quick_medical_treatment{
+	/*height: 200px;
+	width: 800px;
+	background-color: red;*/
+}
+
+.kjjy .wrap .main .quick_medical_treatment .title{
+	height: 190px;
+	width: 30px;
+	background-color:#165ba5;	
+	position: relative;
+	float: left;
+	margin-right: 30px;
+}
+.kjjy .wrap .main .quick_medical_treatment .title a{
+	font-size: 20px;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.kjjy .wrap .main .quick_medical_treatment .list{
+	height: 200px;
+	width: 740px;
+	/*background-color: silver;*/
+	float: left;
+	margin-right: 20px;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li{
+	float: left;
+	height: 93px;
+	width: 180px;
+	background-color: #3598db;
+	margin: 0 3px 3px 0;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:hover{
+	opacity: .8;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li .pics{
+	height: 50px;
+	width: 50px;
+	
+	background-position: left center;
+	margin:  3px auto;
+		
+	transition:transform ease-in-out .5s;
+}
+
+
+.kjjy .wrap .main .quick_medical_treatment .list ul li .pics:hover{
+	transform: rotateZ(360deg);
+	
+}
+
+
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(1) .pics{
+	background: url(../img/yygh.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(2) .pics{
+	background: url(../img/tzgg.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(3) .pics{
+	background: url(../img/mzsj.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(4) .pics{
+	background: url(../img/tzgg.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(5) .pics{
+	background: url(../img/zylc.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(6) .pics{
+	background: url(../img/ybfw.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(7) .pics{
+	background: url(../img/jylx.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .list ul li:nth-child(8) .pics{
+	background: url(../img/jjdt.png) no-repeat;
+}
+
+
+.kjjy .wrap .main .quick_medical_treatment .list ul li .name{
+	font-size: 16px;
+	color: white;
+	margin-top: 8px;
+}
+
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li{
+	width: 148px;
+	height: 94px;
+	float: left;
+	/*background-color: sienna;*/
+	margin: 0 3px 3px 0;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	background-color: darkgrey;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li a .inquire_pic{
+	height: 65px;
+	background-size: 150px 60px;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li a>.titles{
+	margin-top: -6px;
+	color: black;
+}
+
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li:nth-child(1) a .inquire_pic{
+	background: url(../img/lia1.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li:nth-child(2) a .inquire_pic{
+	background: url(../img/lia2.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li:nth-child(3) a .inquire_pic{
+	background: url(../img/lia3.png) no-repeat;
+}
+.kjjy .wrap .main .quick_medical_treatment .inquire_service ul li:nth-child(4) a .inquire_pic{
+	background: url(../img/lia4.png) no-repeat;
+}
+
+
+.new{
+	background: url(../img/jbbj.jpg) no-repeat;
+	background-position: 0 -312px;
+	/*height: 290px;*/
+	width: 1350px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	
+	margin-bottom: 200px;
+	position: relative;
+}
+.new .wrap{
+	/*position: absolute;
+	left: 75px;*/
+	margin:  0 auto;
+	width: 1200px;
+	height: 290px;
+	
+	border-bottom: 1px solid grey;
+	
+}
+.new .wrap .new_center{
+	width: 820px;
+	overflow: hidden;
+	float: left;
+	margin-left: 5px;
+}
+.new .new_center .header{
+	border-bottom: 1px solid darkgrey;
+	height: 45px;
+	position: relative;
+}
+
+.new .new_center .header .title{
+	width: 120px;
+	height: 44px;
+	
+	color: lightblue;
+	text-align: center;
+	line-height: 44px;
+	border-bottom: 3px solid darkblue;
+}
+.new .new_center .header span{
+	position: absolute;
+	bottom: 2px;
+	right: 10px;
+	font-size: 15px;
+}
+
+.new .new_center .new_wrap{
+	overflow: hidden;
+	padding-top: 10px;
+}
+.new .new_center .new_wrap .lunbo{
+	height: 187px;
+	width: 328px;
+	background-color: saddlebrown;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.new .new_center .new_wrap .news{
+	float: left;
+	width: 470px;
+	height: 211px;
+	background-color: white;
+	font-size: 14px;
+	overflow: hidden;
+	
+}
+.new .new_center .new_wrap .news ul li{
+	padding: 8px;
+}
+.new .new_center .new_wrap .news ul li  span{
+	float: right;
+	color: #757575;
+}
+.new .new_center .new_wrap .news a{
+	color: #757575;
+	font-size: 13px;
+	margin-left: 5px;
+}
+.new .new_center .new_wrap .news a:hover{
+	text-decoration: underline;
+}
+.new .wrap .infor_show{
+	width: 347px;
+	margin-left: 20px;
+}
+
+.new .new_center .info_box{
+	width: 350px;
+	height: 225px;
+	/*background-color: salmon;*/
+	position: relative;
+}
+.new .new_center .info_box .title{
+	position: absolute;
+	top: 5px;
+	left: 1px;
+}
+.new .new_center .info_box .title a{
+	display: inline-block;
+	height: 38px;
+	width: 110px;
+	background-color: lightblue;
+	text-align: center;
+	line-height: 38px;
+}
+.new .new_center .info_box .title a.hover{
+	background-color: darkblue;
+	color: white;
+}
+
+.new .new_center .info_box  .titles_list{
+	height: 200px;
+	width: 340px;
+	background-color: white;
+	position: absolute;
+	left: 1px;
+	top: 45px;
+	display: none;
+}
+.new .new_center .info_box .show{
+	display: block;
+}
+.new .new_center .info_box  .titles_list ul li{
+	padding: 8px;
+	font-size: 13px;
+	color: #666666;
+}
+.new .new_center .info_box  .titles_list ul li a{
+	font-size: 13px;
+	color: #666666;
+	display: inline-block;
+	width: 70%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.new .new_center .info_box  .titles_list ul li a:hover{	
+	color: red;
+}
+.new .new_center .info_box  .titles_list ul li span:nth-of-type(2){
+	font-size: 13px;
+	float: right;
+}
+
+.new .hospital_wrap{
+	width: 1200px;
+	height: 540px;
+	background-color: white;
+	margin:  0 auto;
+}
+
+.new .hospital_wrap .department_nav{
+	float: left;
+	width: 50%;
+	border-bottom: 3px solid lightgray;
+}
+.new .hospital_wrap .department_nav .header{
+	height: 50px;
+	line-height: 50px;
+}
+.new .hospital_wrap .department_nav .header span{
+	 margin-left: 20px;
+	 color: lightblue;
+}
+.new .hospital_wrap .department_nav .department_title{
+	
+}
+.new .hospital_wrap .department_nav .department_title a{
+	display: inline-block;
+	height: 40px;
+	width: 130px;
+	text-align: center;
+	line-height: 40px;
+	background-color: lightcyan;
+	letter-spacing: 3px;
+}
+.new .hospital_wrap .department_nav .department_title a.hover{
+	background-color: darkblue;
+	color: white;
+}
+
+.new .hospital_wrap .department_nav .department_list{
+	margin-top: 20px;
+	display: none;
+}
+.new .hospital_wrap .department_nav .shows{
+	display: block;
+}
+.new .hospital_wrap .department_nav .department_list ul li{
+	height: 110px;
+	width: 100px;
+	background-color: lightgrey;
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	text-align: center;
+	opacity: .8;
+}
+.new .hospital_wrap .department_nav .department_list ul li:hover{
+	box-shadow: 2px 2px 2px 2px #666666;
+	opacity: 1;
+}
+.new .hospital_wrap .department_nav .department_list ul li a{
+	display: block;
+	height: 100%;
+	width: 100%;	
+	text-align: center;
+}
+
+
+.new .hospital_wrap .department_nav .department_list ul li p{
+	font-size: 12px;
+	margin-top: -25px;
+}
+.new .hospital_wrap .department_nav .department_list ul li a span{
+	font-size: 16px;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.new .hospital_wrap .department_nav .department_footer{
+	
+}
+
+.new .hospital_wrap .famous_doctor{
+	width: 50%;
+	float: left;
+}
+
+.new .hospital_wrap .famous_doctor .header{
+	height: 50px;
+	line-height: 50px;
+	background-color: salmon;
+}
+.new .hospital_wrap .famous_doctor .header span{
+	color: lightblue;
+}
+.new .hospital_wrap .famous_doctor .header a{
+	float: right;
+}
+
+.new .hospital_wrap .famous_doctor .doctor_detail{
+	height: 250px;
+	background-color: burlywood;
+	border-bottom: 1px solid darkgreen;
+}
+
+
+.new .hospital_wrap .famous_doctor .doctor_list{
+	background-color: mediumturquoise;
+	height: 150px;
+}
